@@ -1,4 +1,4 @@
-import Expo, { Constants, LegacyAsyncStorage } from 'expo';
+import Expo, { Constants } from 'expo';
 import React from 'react';
 import { View, Button, AsyncStorage } from 'react-native';
 
@@ -20,17 +20,6 @@ class AppContainer extends React.Component {
             alert('get:' + JSON.stringify(result));
             console.log(JSON.stringify(result));
           });
-        }} />
-
-        <Button title="GetAnswerFromLegacyAsyncStorage" onPress={() => {
-          AsyncStorage.getItem('ANSWER', (err, result) => {
-            alert('get:' + JSON.stringify(result));
-            console.log(JSON.stringify(result));
-          });
-        }} />
-
-        <Button title="LegacyAsyncStorage.migrateItems" onPress={async () => {
-          await LegacyAsyncStorage.migrateItems(['ANSWER'])
         }} />
 
       </View>
