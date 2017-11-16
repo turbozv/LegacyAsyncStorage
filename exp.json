@@ -1,0 +1,31 @@
+{
+  "name": "LegacyAsyncStorage",
+  "description": "LegacyAsyncStorage",
+  "slug": "LegacyAsyncStorage",
+  "privacy": "public",
+  "sdkVersion": "16.0.0",
+  "version": "1.0.0",
+  "primaryColor": "#cccccc",
+  "icon": "./assets/icons/app-icon.png",
+  "notification": {
+    "icon": "./assets/icons/notification-icon.png",
+    "color": "#000000"
+  },
+  "loading": {
+    "icon": "./assets/icons/loading-icon.png",
+    "hideExponentText": true
+  },
+  "packagerOpts": {
+    "assetExts": [
+      "ttf"
+    ]
+  },
+  "ios": {
+    "bundleIdentifier": "org.LegacyAsyncStorage",
+    "supportsTablet": true
+  },
+  "android": {
+    "package": "org.LegacyAsyncStorage",
+    "versionCode": 1
+  }
+}
