@@ -3,7 +3,7 @@
   "description": "LegacyAsyncStorage",
   "slug": "LegacyAsyncStorage",
   "privacy": "public",
-  "sdkVersion": "16.0.0",
+  "sdkVersion": "17.0.0",
   "version": "1.0.0",
   "primaryColor": "#cccccc",
   "icon": "./assets/icons/app-icon.png",
