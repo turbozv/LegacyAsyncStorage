@@ -9,12 +9,6 @@ class AppContainer extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, marginTop: 50 }}>
-        <Button title="SetAnswerToAsyncStorage" onPress={() => {
-          AsyncStorage.setItem('ANSWER', JSON.stringify(this.testData), () => {
-            alert('set:' + JSON.stringify(this.testData));
-          })
-        }} />
-
         <Button title="GetAnswerFromAsyncStorage" onPress={() => {
           AsyncStorage.getItem('ANSWER', (err, result) => {
             alert('get:' + JSON.stringify(result));
@@ -23,7 +17,7 @@ class AppContainer extends React.Component {
         }} />
 
         <Button title="GetAnswerFromLegacyAsyncStorage" onPress={() => {
-          AsyncStorage.getItem('ANSWER', (err, result) => {
+          LegacyAsyncStorage.getItem('ANSWER', (err, result) => {
             alert('get:' + JSON.stringify(result));
             console.log(JSON.stringify(result));
           });
